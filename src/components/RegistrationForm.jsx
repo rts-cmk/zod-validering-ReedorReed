@@ -75,7 +75,7 @@ export default function RegistrationForm() {
 				<label className="registration-form__label">
 					<span className="registration-form__text">E-mail</span>
 					<input
-						type="text"
+						type="email"
 						name="email"
 						className="registration-form__input"
 						autoComplete="email"
@@ -89,7 +89,7 @@ export default function RegistrationForm() {
 				<label className="registration-form__label">
 					<span className="registration-form__text">Password</span>
 					<input
-						type="text"
+						type="password"
 						name="password"
 						className="registration-form__input"
 						autoComplete="new-password"
@@ -103,7 +103,7 @@ export default function RegistrationForm() {
 				<label className="registration-form__label">
 					<span className="registration-form__text">Confirm password</span>
 					<input
-						type="text"
+						type="password"
 						name="confirmPassword"
 						className="registration-form__input"
 						autoComplete="new-password"
@@ -129,9 +129,11 @@ export default function RegistrationForm() {
 					</ul>
 				</label>
 				<label className="registration-form__label">
-					<span className="registration-form__text">Phone number</span>
+					<span className="registration-form__text">
+						Phone number (Optional)
+					</span>
 					<input
-						type="text"
+						type="tel"
 						name="phone"
 						className="registration-form__input"
 						autoComplete="tel"
@@ -159,7 +161,7 @@ export default function RegistrationForm() {
 				<label className="registration-form__label">
 					<span className="registration-form__text">Zip code</span>
 					<input
-						type="text"
+						type="number"
 						name="zip"
 						className="registration-form__input"
 						autoComplete="postal-code"
