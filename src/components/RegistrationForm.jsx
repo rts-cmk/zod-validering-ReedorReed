@@ -17,7 +17,8 @@ export default function RegistrationForm() {
 
 		if (result.success) {
 			setErrors({});
-			alert('New user successfully created');
+			const { password, confirmPassword, ...alertData } = formDataObject;
+			alert(`New user registered:\n${JSON.stringify(alertData, null, 2)}`);
 		} else {
 			const seeErrors = z.treeifyError(result.error);
 			console.log(seeErrors.properties);
